@@ -11,5 +11,5 @@
 !.prettierrc
 !README.md
 !CHANGELOG.md
-!.eslintrc.cjs
+!eslint.config.js
 !postcss.config.js
