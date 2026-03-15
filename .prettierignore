@@ -10,7 +10,6 @@
 !vite.config.ts
 !.prettierrc
 !README.md
-!CHANGELOG.md
 !eslint.config.js
 !postcss.config.js
 
