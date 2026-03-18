@@ -84,7 +84,7 @@ id: '/(errors)/503',
 path: '/503',
 getParentRoute: () => rootRoute,
 } as any)
-.lazy(() => import('./routes/(errors)/503.lazy').then((d) => d.Route))
+.lazy(() => import('./routes/(errors)/503').then((d) => d.Route))
 
 const errors500LazyRoute = errors500LazyImport
 .update({
@@ -92,7 +92,7 @@ id: '/(errors)/500',
 path: '/500',
 getParentRoute: () => rootRoute,
 } as any)
-.lazy(() => import('./routes/(errors)/500.lazy').then((d) => d.Route))
+.lazy(() => import('./routes/(errors)/500').then((d) => d.Route))
 
 const errors404LazyRoute = errors404LazyImport
 .update({
@@ -100,7 +100,7 @@ id: '/(errors)/404',
 path: '/404',
 getParentRoute: () => rootRoute,
 } as any)
-.lazy(() => import('./routes/(errors)/404.lazy').then((d) => d.Route))
+.lazy(() => import('./routes/(errors)/404').then((d) => d.Route))
 
 const errors403LazyRoute = errors403LazyImport
 .update({
@@ -108,7 +108,7 @@ id: '/(errors)/403',
 path: '/403',
 getParentRoute: () => rootRoute,
 } as any)
-.lazy(() => import('./routes/(errors)/403.lazy').then((d) => d.Route))
+.lazy(() => import('./routes/(errors)/403').then((d) => d.Route))
 
 const errors401LazyRoute = errors401LazyImport
 .update({
@@ -116,7 +116,7 @@ id: '/(errors)/401',
 path: '/401',
 getParentRoute: () => rootRoute,
 } as any)
-.lazy(() => import('./routes/(errors)/401.lazy').then((d) => d.Route))
+.lazy(() => import('./routes/(errors)/401').then((d) => d.Route))
 
 const authSignUpLazyRoute = authSignUpLazyImport
 .update({
@@ -124,7 +124,7 @@ id: '/(auth)/sign-up',
 path: '/sign-up',
 getParentRoute: () => rootRoute,
 } as any)
-.lazy(() => import('./routes/(auth)/sign-up.lazy').then((d) => d.Route))
+.lazy(() => import('./routes/(auth)/sign-up').then((d) => d.Route))
 
 const authSignIn2LazyRoute = authSignIn2LazyImport
 .update({
@@ -132,7 +132,7 @@ id: '/(auth)/sign-in-2',
 path: '/sign-in-2',
 getParentRoute: () => rootRoute,
 } as any)
-.lazy(() => import('./routes/(auth)/sign-in-2.lazy').then((d) => d.Route))
+.lazy(() => import('./routes/(auth)/sign-in-2').then((d) => d.Route))
 
 const authForgotPasswordLazyRoute = authForgotPasswordLazyImport
 .update({
@@ -141,7 +141,7 @@ path: '/forgot-password',
 getParentRoute: () => rootRoute,
 } as any)
 .lazy(() =>
-import('./routes/(auth)/forgot-password.lazy').then((d) => d.Route),
+import('./routes/(auth)/forgot-password').then((d) => d.Route),
 )
 
 const AuthenticatedSettingsRouteLazyRoute =
@@ -150,7 +150,7 @@ id: '/settings',
 path: '/settings',
 getParentRoute: () => AuthenticatedRouteRoute,
 } as any).lazy(() =>
-import('./routes/_authenticated/settings/route.lazy').then((d) => d.Route),
+import('./routes/_authenticated/settings/route').then((d) => d.Route),
 )
 
 const authSignInRoute = authSignInImport.update({
@@ -177,7 +177,7 @@ id: '/users/',
 path: '/users/',
 getParentRoute: () => AuthenticatedRouteRoute,
 } as any).lazy(() =>
-import('./routes/_authenticated/users/index.lazy').then((d) => d.Route),
+import('./routes/_authenticated/users').then((d) => d.Route),
 )
 
 const AuthenticatedTasksIndexLazyRoute =
@@ -186,7 +186,7 @@ id: '/tasks/',
 path: '/tasks/',
 getParentRoute: () => AuthenticatedRouteRoute,
 } as any).lazy(() =>
-import('./routes/_authenticated/tasks/index.lazy').then((d) => d.Route),
+import('./routes/_authenticated/tasks').then((d) => d.Route),
 )
 
 const AuthenticatedSettingsIndexLazyRoute =
@@ -195,7 +195,7 @@ id: '/',
 path: '/',
 getParentRoute: () => AuthenticatedSettingsRouteLazyRoute,
 } as any).lazy(() =>
-import('./routes/_authenticated/settings/index.lazy').then((d) => d.Route),
+import('./routes/_authenticated/settings').then((d) => d.Route),
 )
 
 const AuthenticatedHelpCenterIndexLazyRoute =
@@ -204,7 +204,7 @@ id: '/help-center/',
 path: '/help-center/',
 getParentRoute: () => AuthenticatedRouteRoute,
 } as any).lazy(() =>
-import('./routes/_authenticated/help-center/index.lazy').then(
+import('./routes/_authenticated/help-center').then(
 (d) => d.Route,
 ),
 )
@@ -215,7 +215,7 @@ id: '/chats/',
 path: '/chats/',
 getParentRoute: () => AuthenticatedRouteRoute,
 } as any).lazy(() =>
-import('./routes/_authenticated/chats/index.lazy').then((d) => d.Route),
+import('./routes/_authenticated/chats').then((d) => d.Route),
 )
 
 const AuthenticatedAppsIndexLazyRoute = AuthenticatedAppsIndexLazyImport.update(
@@ -225,7 +225,7 @@ path: '/apps/',
 getParentRoute: () => AuthenticatedRouteRoute,
 } as any,
 ).lazy(() =>
-import('./routes/_authenticated/apps/index.lazy').then((d) => d.Route),
+import('./routes/_authenticated/apps').then((d) => d.Route),
 )
 
 const AuthenticatedSettingsNotificationsLazyRoute =
@@ -234,7 +234,7 @@ id: '/notifications',
 path: '/notifications',
 getParentRoute: () => AuthenticatedSettingsRouteLazyRoute,
 } as any).lazy(() =>
-import('./routes/_authenticated/settings/notifications.lazy').then(
+import('./routes/_authenticated/settings/notifications').then(
 (d) => d.Route,
 ),
 )
@@ -245,7 +245,7 @@ id: '/display',
 path: '/display',
 getParentRoute: () => AuthenticatedSettingsRouteLazyRoute,
 } as any).lazy(() =>
-import('./routes/_authenticated/settings/display.lazy').then(
+import('./routes/_authenticated/settings/display').then(
 (d) => d.Route,
 ),
 )
@@ -256,7 +256,7 @@ id: '/appearance',
 path: '/appearance',
 getParentRoute: () => AuthenticatedSettingsRouteLazyRoute,
 } as any).lazy(() =>
-import('./routes/_authenticated/settings/appearance.lazy').then(
+import('./routes/_authenticated/settings/appearance').then(
 (d) => d.Route,
 ),
 )
@@ -267,7 +267,7 @@ id: '/account',
 path: '/account',
 getParentRoute: () => AuthenticatedSettingsRouteLazyRoute,
 } as any).lazy(() =>
-import('./routes/_authenticated/settings/account.lazy').then(
+import('./routes/_authenticated/settings/account').then(
 (d) => d.Route,
 ),
 )
