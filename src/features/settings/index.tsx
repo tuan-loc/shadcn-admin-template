@@ -1,11 +1,5 @@
 import { Outlet } from '@tanstack/react-router'
-import {
-  IconBrowserCheck,
-  IconNotification,
-  IconPalette,
-  IconTool,
-  IconUser,
-} from '@tabler/icons-react'
+import { Monitor, Bell, Palette, Wrench, UserCog } from 'lucide-react'
 import { Separator } from '@/components/ui/separator'
 import { Header } from '@/components/layout/header'
 import { Main } from '@/components/layout/main'
@@ -52,27 +46,27 @@ export default function Settings() {
 const sidebarNavItems = [
   {
     title: 'Profile',
-    icon: <IconUser size={18} />,
+    icon: <UserCog size={18} />,
     href: '/settings',
   },
   {
     title: 'Account',
-    icon: <IconTool size={18} />,
     href: '/settings/account',
+    icon: <Wrench size={18} />,
   },
   {
     title: 'Appearance',
-    icon: <IconPalette size={18} />,
+    icon: <Palette size={18} />,
     href: '/settings/appearance',
   },
   {
     title: 'Notifications',
-    icon: <IconNotification size={18} />,
+    icon: <Bell size={18} />,
     href: '/settings/notifications',
   },
   {
     title: 'Display',
-    icon: <IconBrowserCheck size={18} />,
+    icon: <Monitor size={18} />,
     href: '/settings/display',
   },
 ]
