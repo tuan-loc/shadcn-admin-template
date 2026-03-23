@@ -25,7 +25,7 @@ export function ProfileDropdown() {
       </DropdownMenuTrigger>
       <DropdownMenuContent className='w-56' align='end' forceMount>
         <DropdownMenuLabel className='font-normal'>
-          <div className='flex flex-col space-y-1'>
+          <div className='flex flex-col gap-1.5'>
             <p className='text-sm leading-none font-medium'>tuanloc</p>
             <p className='text-muted-foreground text-xs leading-none'>
               tuanlocdev@gmail.com
